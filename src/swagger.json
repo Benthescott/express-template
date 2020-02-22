@@ -3,7 +3,7 @@
     "info": {
       "description": "This is a template for quickly building express web services.",
       "version": "1.0.0",
-      "title": "Node Template"
+      "title": "Express Template"
     },
     "tags": [
       {
