@@ -1,0 +1,69 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "This is a template for quickly building express web services.",
+      "version": "1.0.0",
+      "title": "Node Template"
+    },
+    "tags": [
+      {
+        "name": "default",
+        "description": "Default service routes"
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "tags": [
+            "default"
+          ],
+          "summary": "",
+          "description": "",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/ecv": {
+        "get": {
+          "tags": [
+            "default"
+          ],
+          "summary": "LB Healthcheck",
+          "description": "This route is what would be used by a load balancer to route traffic to nodes which are up and running.",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
